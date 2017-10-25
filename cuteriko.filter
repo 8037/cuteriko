@@ -1,4 +1,18 @@
-﻿# Section: CURRENCY
+﻿#
+# cuteriko - a path of exile semi-strict
+# filter for temp. hardcore league players
+#
+#
+# version: 1.0
+# author: 8037
+# contact: 8037@airmail.cc
+# forum thread: SOON
+#
+# if you see something like this: https://tknk.io/A3T4
+# it's a bug, report to me immediately
+#
+
+# Section: CURRENCY
 
 Show
     Class "Currency"

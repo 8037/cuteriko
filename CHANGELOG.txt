@@ -1,0 +1,8 @@
+#
+# cuteriko - a path of exile semi-strict
+# filter for temp. hardcore league
+#
+
+version 0.1  ---
+
+- initial release

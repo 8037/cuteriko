@@ -3,6 +3,16 @@
 # filter for temp. hardcore league
 #
 
+version 1.0  ---
+- added abyss league content
+- removed harbinger league orbs/shards/uniques
+- added orb of annulment to currency
+- moved fishing rods to special base (gripped gloves, fingerless silk gloves, etc)
+- changed corrupted items rarity to rare
+- moved empower/enlighten (no quality) a tier up
+- changed special base (gripped gloves, fingerless silk gloves, etc) color
+- add section for lab enchant bases
+- general polish
 version 0.1  ---
 
 - initial release

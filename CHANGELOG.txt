@@ -1,9 +1,25 @@
+# cuteriko - 	a path of exile semi-strict
+# 				filter for temp. hardcore league players
 #
-# cuteriko - a path of exile semi-strict
-# filter for temp. hardcore league
+# version: 		1.0.1
+# author: 		8037
+# contact: 		8037@airmail.cc
+# forum thread: SOON
+# github: 		https://github.com/8037/cuteriko
 #
+#
+# if you see something like this: https://tknk.io/A3T4
+# it's a bug, report to me immediately
 
-version 1.0  ---
+version 1.0.1	---
+- fixed elder/shaper item conflict
+- added new colors for elder/shaper items
+- added stygian vise to special base tier 
+- removed beltw from filter (except stygian vise and crystal belt bases)
+- smal bugfixes
+
+
+version 1.0		---
 - added abyss league content
 - removed harbinger league orbs/shards/uniques
 - added orb of annulment to currency
@@ -13,6 +29,7 @@ version 1.0  ---
 - changed special base (gripped gloves, fingerless silk gloves, etc) color
 - add section for lab enchant bases
 - general polish
-version 0.1  ---
+
+version 0.1 	---
 
 - initial release

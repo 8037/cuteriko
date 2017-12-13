@@ -1,15 +1,18 @@
-﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
-# cuteriko - a path of exile semi-strict
-# filter for temp. hardcore league players
-# version: 0.1
-# author: 8037
-# contact: 8037@airmail.cc
+﻿# cuteriko - 	a path of exile semi-strict
+# 				filter for temp. hardcore league players
+#
+# version: 		1.0.1
+# author: 		8037
+# contact: 		8037@airmail.cc
 # forum thread: SOON
-# github: https://github.com/8037/cuteriko
+# github: 		https://github.com/8037/cuteriko
+#
+#
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
-# Section: CURRENCY
 
+
+# Section: CURRENCY
 # CURRENCY
 
 Show
@@ -92,7 +95,7 @@ Show
 
 Hide
     Class "Currency"
-    BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Augmentation" "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment" "Transmutation Shard" "Chromatic Orb" "Orb of Alteration" "Alteration Shard" "Alchemy Shard"
+    BaseType "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Blacksmith's Whetstone" "Armourer's Scrap"
 
 # Section: RARES - VENDOR
 
@@ -118,10 +121,19 @@ Show
 
 Show
     ElderItem True
+    ItemLevel >= 84
+    Rarity <= Rare
+    SetTextColor 93 73 62 # WAR
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSoundPositional 6 300
+
+Show
     ShaperItem True
     ItemLevel >= 84
     Rarity <= Rare
-    SetTextColor 85 142 93 # ABY
+    SetTextColor 93 73 62 # WAR
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
     SetFontSize 45
@@ -129,12 +141,21 @@ Show
 
 Show
     ElderItem True
+    Rarity <= Rare
+    SetTextColor 93 73 62 # WAR
+    SetBackgroundColor 240 209 142 # WAR
+    SetBorderColor 240 209 142 # WAR
+    SetFontSize 45
+    PlayAlertSound 2 300
+
+Show
     ShaperItem True
     Rarity <= Rare
-    SetTextColor 255 255 255 # WHT
-    SetBackgroundColor 85 142 93 # ABY
-    SetBorderColor 85 142 93 # ABY
+    SetTextColor 93 73 62 # WAR
+    SetBackgroundColor 240 209 142 # WAR
+    SetBorderColor 240 209 142 # WAR
     SetFontSize 45
+    PlayAlertSound 2 300
 
 # Section: RARES - BASES
 
@@ -159,15 +180,6 @@ Show
     PlayAlertSound 2 300
 
 Show
-    ItemLevel >= 84
-    BaseType "Opal Ring" "Steel Ring" "Crystal Belt" "Marble Amulet" "Stygian Vise" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-    SetTextColor 75 54 69 # RAS
-    SetBackgroundColor 255 255 255 # WHT
-    SetBorderColor 255 255 255 # WHT
-    SetFontSize 45
-    PlayAlertSound 6 300
-
-Show
     Rarity <= Rare
     Class "Fishing Rods"
     SetTextColor 75 54 69 # RAS
@@ -177,12 +189,39 @@ Show
     PlayAlertSound 6 200
 
 Show
-    BaseType "Opal Ring" "Steel Ring" "Crystal Belt" "Marble Amulet" "Stygian Vise"
+    ItemLevel >= 84
+    BaseType "Stygian Vise"
+    SetTextColor 75 54 69 # RAS
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    ItemLevel >= 84
+    BaseType "Opal Ring" "Steel Ring" "Crystal Belt" "Marble Amulet" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    SetTextColor 75 54 69 # RAS
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
+    BaseType "Opal Ring" "Steel Ring" "Crystal Belt" "Marble Amulet"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 75 54 69 # RA1
     SetBorderColor 75 54 69 # RA1
     SetFontSize 45
     PlayAlertSound 6 300
+
+Show
+    Rarity <= Rare
+    BaseType "Stygian Vise"
+    SetTextColor 255 255 255 # WHT
+    SetBackgroundColor 75 54 69 # RA1
+    SetBorderColor 75 54 69 # RA1
+    SetFontSize 45
+    PlayAlertSound 2 300
 
 Show
     BaseType "Blue Pearl Amulet" "Vanguard Belt"
@@ -247,7 +286,7 @@ Show
 Show
     ItemLevel >= 72
     Rarity = Rare
-    Class "Rings" "Belts" "Amulets"
+    Class "Rings" "Amulets"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR

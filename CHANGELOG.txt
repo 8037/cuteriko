@@ -15,8 +15,8 @@ version 1.0.1	---
 - fixed elder/shaper item conflict
 - added new colors for elder/shaper items
 - added stygian vise to special base tier 
-- removed beltw from filter (except stygian vise and crystal belt bases)
-- smal bugfixes
+- removed belts from filter (except stygian vise and crystal belt bases)
+- small bugfixes
 
 
 version 1.0		---

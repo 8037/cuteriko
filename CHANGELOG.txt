@@ -2,7 +2,7 @@
 # a path of exile semi-strict
 # filter for temp. hardcore league players
 #
-# version: 		1.0.1
+# version: 		1.0.2
 # author: 		8037
 # contact: 		8037@airmail.cc
 # forum thread: SOON
@@ -11,6 +11,10 @@
 #
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
+
+version 1.0.2	---
+- fixed shaped maps interaction with filter
+- general polish
 
 version 1.0.1	---
 - fixed elder/shaper item conflict

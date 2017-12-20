@@ -1,18 +1,15 @@
-﻿# cuteriko - 	
-# a path of exile semi-strict
+﻿# cuteriko - a path of exile semi-strict
 # filter for temp. hardcore league players
-#
-# version: 		1.0.1
-# author: 		8037
-# contact: 		8037@airmail.cc
+# 
+# version: 1.0.2
+# author: 8037
+# contact: 8037@airmail.cc
 # forum thread: SOON
-# github: 		https://github.com/8037/cuteriko
-#
-#
+# github: https://github.com/8037/cuteriko
+# 
+# 
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
-
-
 # Section: CURRENCY
 # CURRENCY
 
@@ -36,7 +33,15 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Chromatic Orb" "Orb of Alteration"
+    BaseType "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Orb of Alteration"
+    SetTextColor 255 255 255 # WHT
+    SetBackgroundColor 219 72 72 # $$$
+    SetBorderColor 219 72 72 # $$$
+    SetFontSize 45
+
+Hide
+    Class "Currency"
+    BaseType "Orb of Transmutation" "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Chromatic Orb"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 219 72 72 # $$$
     SetBorderColor 219 72 72 # $$$
@@ -96,7 +101,7 @@ Show
 
 Hide
     Class "Currency"
-    BaseType "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Blacksmith's Whetstone" "Armourer's Scrap"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Alchemy Shard"
 
 # Section: RARES - VENDOR
 
@@ -161,26 +166,6 @@ Show
 # Section: RARES - BASES
 
 Show
-    LinkedSockets = 5
-    Rarity <= Rare
-    Class "Body Armours"
-    SetTextColor 127 127 127 # 6ST
-    SetBackgroundColor 42 42 52 # 6ST
-    SetBorderColor 42 42 52 # 6ST
-    SetFontSize 45
-    PlayAlertSound 2 300
-
-Show
-    ItemLevel >= 84
-    Rarity <= Rare
-    BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet"
-    SetTextColor 127 127 127 # 6ST
-    SetBackgroundColor 42 42 52 # 6ST
-    SetBorderColor 42 42 52 # 6ST
-    SetFontSize 45
-    PlayAlertSound 2 300
-
-Show
     Rarity <= Rare
     Class "Fishing Rods"
     SetTextColor 75 54 69 # RAS
@@ -208,16 +193,27 @@ Show
     PlayAlertSound 6 300
 
 Show
-    BaseType "Opal Ring" "Steel Ring" "Crystal Belt" "Marble Amulet"
-    SetTextColor 255 255 255 # WHT
-    SetBackgroundColor 75 54 69 # RA1
-    SetBorderColor 75 54 69 # RA1
+    LinkedSockets = 5
+    Rarity <= Rare
+    Class "Body Armours"
+    SetTextColor 127 127 127 # 6ST
+    SetBackgroundColor 42 42 52 # 6ST
+    SetBorderColor 42 42 52 # 6ST
     SetFontSize 45
-    PlayAlertSound 6 300
+    PlayAlertSound 2 300
 
 Show
+    ItemLevel >= 84
     Rarity <= Rare
-    BaseType "Stygian Vise"
+    BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Titanium Spirit Shield"
+    SetTextColor 127 127 127 # 6ST
+    SetBackgroundColor 42 42 52 # 6ST
+    SetBorderColor 42 42 52 # 6ST
+    SetFontSize 45
+    PlayAlertSound 2 300
+
+Show
+    BaseType "Opal Ring" "Steel Ring" "Marble Amulet"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 75 54 69 # RA1
     SetBorderColor 75 54 69 # RA1
@@ -225,31 +221,21 @@ Show
     PlayAlertSound 2 300
 
 Show
-    BaseType "Blue Pearl Amulet" "Vanguard Belt"
+    ItemLevel >= 72
+    Rarity <= Rare
+    BaseType "Stygian Vise"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 75 54 69 # RA1
     SetBorderColor 75 54 69 # RA1
     SetFontSize 45
 
-#Disabled Block Start
-#Show
-#    ItemLevel >= 84
-#    Rarity <= Rare
-#    BaseType "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Carnal Armour" "Sorcerer Boots" "Sorcerer Gloves" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Titanium Spirit Shield" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-#    SetBackgroundColor 66 66 66 # CFT
-#    SetBorderColor 127 127 127 # CFT
-#    SetFontSize 45
-#Disabled Block End
-
-#Disabled Block Start
-#Show
-#    ItemLevel >= 83
-#    Rarity <= Rare
-#    BaseType "Ambusher" "Harbinger Bow" "Vaal Axe"
-#    SetBackgroundColor 66 66 66 # CFT
-#    SetBorderColor 127 127 127 # CFT
-#    SetFontSize 45
-#Disabled Block End
+Hide
+    Rarity <= Rare
+    BaseType "Blue Pearl Amulet" "Vanguard Belt"
+    SetTextColor 255 255 255 # WHT
+    SetBackgroundColor 75 54 69 # RA1
+    SetBorderColor 75 54 69 # RA1
+    SetFontSize 45
 
 # Section: RARES - CORRUPTED
 
@@ -422,7 +408,15 @@ Show
 # Section: RARE - JEWELS
 
 Show
-    Rarity <= Rare
+    Rarity = Rare
+    Class "Abyss Jewel"
+    SetTextColor 210 255 189 # AJW
+    SetBackgroundColor 112 194 124 # AJW
+    SetBorderColor 112 194 124 # AJW
+    SetFontSize 45
+
+Hide
+    Rarity <= Magic
     Class "Abyss Jewel"
     SetTextColor 210 255 189 # AJW
     SetBackgroundColor 112 194 124 # AJW
@@ -437,7 +431,7 @@ Show
     SetBorderColor 237 186 0 # JWR
     SetFontSize 45
 
-Show
+Hide
     Rarity <= Magic
     Class "Jewel"
     SetTextColor 0 129 255 # JWM
@@ -525,6 +519,16 @@ Show
 
 Show
     DropLevel >= 78
+    Class "Maps"
+    SetTextColor 0 0 0 # BLK
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 5 300
+
+Show
+    ShapedMap True
+    DropLevel >= 73
     Class "Maps"
     SetTextColor 0 0 0 # BLK
     SetBackgroundColor 255 255 255 # WHT
@@ -633,14 +637,13 @@ Show
 
 # Section: DIV CARDS
 
-Show
+Hide
     Class "Divination Card"
     BaseType "The Wolf's Shadow"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 29 64 87 # DIV
     SetBorderColor 29 64 87 # DIV
     SetFontSize 45
-    PlayAlertSound 2 300
 
 Show
     Class "Divination Card"
@@ -671,7 +674,11 @@ Show
 
 Hide
     Class "Divination Card"
-    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter"
+    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter" "The Lich" "A Mother's Parting Gift" "The Flora's Gift" "Doedre's Madness" "The Web"
+    SetTextColor 255 255 255 # WHT
+    SetBackgroundColor 29 64 87 # DIV
+    SetBorderColor 29 64 87 # DIV
+    SetFontSize 45
 
 Show
     Class "Divination Card"

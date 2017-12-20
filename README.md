@@ -1,6 +1,6 @@
 # cuteriko
 
-This is a semi-strict filter made for the Path of Exile game. It's designed for mid-to-late mapping in a temporary hardcore league.
+A semi-strict filter for Path of Exile, designed with temporary hardcore leagues in mind.
 
 ### Thanks to
  * [NeverSink-Filter](https://github.com/NeverSinkDev/NeverSink-Filter)

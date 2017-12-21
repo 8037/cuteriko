@@ -1,7 +1,8 @@
-﻿# cuteriko - a path of exile semi-strict
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# cuteriko - a path of exile semi-strict
 # filter for temp. hardcore league players
 # 
-# version: 1.0.2
+# version: 1.0.1
 # author: 8037
 # contact: 8037@airmail.cc
 # forum thread: SOON
@@ -15,7 +16,7 @@
 
 Show
     Class "Currency"
-    BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Albino Rhoa Feather"
+    BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Albino Rhoa Feather" "Orb of Annulment"
     SetTextColor 219 72 72 # $$$
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
@@ -24,7 +25,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Orb of Scouring" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Cartographer's Seal" "Unshaping Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Orb of Annulment"
+    BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Orb of Scouring" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Cartographer's Seal" "Unshaping Orb" "Apprentice Cartographer's Seal" "Journeyman Cartographer's Seal" "Master Cartographer's Seal"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 219 72 72 # $$$
     SetBorderColor 219 72 72 # $$$
@@ -674,7 +675,7 @@ Show
 
 Hide
     Class "Divination Card"
-    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter" "The Lich" "A Mother's Parting Gift" "The Flora's Gift" "Doedre's Madness" "The Web"
+    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter" "The Lich" "A Mother's Parting Gift" "The Flora's Gift" "The Web"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 29 64 87 # DIV
     SetBorderColor 29 64 87 # DIV

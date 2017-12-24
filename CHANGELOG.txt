@@ -2,7 +2,7 @@
 # a path of exile semi-strict
 # filter for temp. hardcore league players
 #
-# version: 		1.0.2
+# version: 		1.0.3
 # author: 		8037
 # contact: 		8037@airmail.cc
 # forum thread: SOON
@@ -11,6 +11,15 @@
 #
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
+
+version 1.0.3 	---
+- moved orb of annulment rarity to t1
+- adjusted tier of some divination cards
+- adjusted tier of ilv84 stygian vise belts and abyssal jewels
+- imbued wands are now hidden
+- two handed weapons are now hidden
+- some armor bases are now hidden
+- minor polish
 
 version 1.0.2	---
 - fixed shaped maps interaction with filter

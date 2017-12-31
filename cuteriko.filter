@@ -244,33 +244,6 @@ Show
 # Section: RARES - BASES
 
 Show
-    ItemLevel >= 84
-    BaseType "Stygian Vise"
-    SetTextColor 69 119 94 # ABY
-    SetBackgroundColor 255 255 255 # WHT
-    SetBorderColor 255 255 255 # WHT
-    SetFontSize 45
-    PlayAlertSound 6 300
-
-Show
-    ItemLevel >= 84
-    BaseType "Opal Ring" "Steel Ring" "Marble Amulet" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-    SetTextColor 75 54 69 # RAS
-    SetBackgroundColor 255 255 255 # WHT
-    SetBorderColor 255 255 255 # WHT
-    SetFontSize 45
-    PlayAlertSound 6 300
-
-Show
-    ItemLevel >= 84
-    BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-    SetTextColor 75 54 69 # RAS
-    SetBackgroundColor 255 255 255 # WHT
-    SetBorderColor 255 255 255 # WHT
-    SetFontSize 45
-    PlayAlertSound 6 300
-
-Show
     LinkedSockets = 5
     Rarity <= Rare
     Class "Body Armours"
@@ -289,6 +262,25 @@ Show
     SetFontSize 45
 
 Show
+    ItemLevel >= 86
+    BaseType "Stygian Vise"
+    SetTextColor 69 119 94 # ABY
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 10 300
+
+Show
+    ItemLevel >= 84
+    Rarity <= Rare
+    BaseType "Stygian Vise"
+    SetTextColor 69 119 94 # ABY
+    SetBackgroundColor 169 230 199 # AB0
+    SetBorderColor 169 230 199 # AB0
+    SetFontSize 45
+    PlayAlertSound 2 300
+
+Show
     ItemLevel >= 72
     Rarity <= Rare
     BaseType "Stygian Vise"
@@ -298,16 +290,44 @@ Show
     SetFontSize 45
 
 Show
+    ItemLevel >= 86
+    BaseType "Bone Helmet" "Two-Toned Boots"
+    SetTextColor 75 54 69 # RAS
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 10 300
+
+Show
+    ItemLevel >= 84
+    BaseType "Opal Ring" "Steel Ring" "Marble Amulet"
+    SetTextColor 75 54 69 # RAS
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 10 300
+
+Show
+    ItemLevel >= 72
     BaseType "Opal Ring" "Steel Ring" "Marble Amulet"
     SetTextColor 255 255 255 # WHT
-    SetBackgroundColor 75 54 69 # RA1
-    SetBorderColor 75 54 69 # RA1
+    SetBackgroundColor 171 135 161 # RA0
+    SetBorderColor 171 135 161 # RA0
     SetFontSize 45
-    PlayAlertSound 6 300
+    PlayAlertSound 2 300
 
-Hide
-    Rarity <= Rare
-    BaseType "Blue Pearl Amulet" "Vanguard Belt"
+Show
+    ItemLevel >= 85
+    BaseType "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    SetTextColor 255 255 255 # WHT
+    SetBackgroundColor 171 135 161 # RA0
+    SetBorderColor 171 135 161 # RA0
+    SetFontSize 45
+    PlayAlertSound 2 300
+
+Show
+    ItemLevel >= 84
+    BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 75 54 69 # RA1
     SetBorderColor 75 54 69 # RA1

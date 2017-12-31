@@ -1,7 +1,8 @@
-﻿# cuteriko - a path of exile semi-strict
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# cuteriko - a path of exile semi-strict
 # filter for temp. hardcore league players
 # 
-# version: 1.0.3
+# version: 1.0.1
 # author: 8037
 # contact: 8037@airmail.cc
 # forum thread: SOON
@@ -10,9 +11,8 @@
 # 
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
-
-
 # Section: CURRENCY
+# CURRENCY
 # CURRENCY
 
 Show
@@ -35,7 +35,7 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble"
+    BaseType "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Orb of Alteration"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 219 72 72 # $$$
     SetBorderColor 219 72 72 # $$$
@@ -43,7 +43,7 @@ Show
 
 Hide
     Class "Currency"
-    BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Chromatic Orb" "Orb of Transmutation" "Orb of Alteration"
+    BaseType "Orb of Augmentation" "Blacksmith's Whetstone" "Armourer's Scrap" "Chromatic Orb" "Orb of Transmutation"
     SetTextColor 255 255 255 # WHT
     SetBackgroundColor 219 72 72 # $$$
     SetBorderColor 219 72 72 # $$$
@@ -73,7 +73,6 @@ Show
     SetBackgroundColor 155 0 224 # PCY
     SetBorderColor 155 0 224 # PCY
     SetFontSize 45
-    PlayAlertSound 2 300
 
 Show
     Class "Currency"
@@ -122,7 +121,7 @@ Show
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
     SetFontSize 45
-    PlayAlertSound 6 200
+    PlayAlertSound 6 300
 
 Show
     LinkedSockets = 6
@@ -142,7 +141,7 @@ Show
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
     SetFontSize 45
-    PlayAlertSound 6 200
+    PlayAlertSound 6 300
 
 # Section: RARES - VENDOR
 
@@ -208,7 +207,7 @@ Show
 
 Show
     Rarity = Unique
-    BaseType "Callous Mask" "Carnal Sceptre" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Burgonet" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Stibnite Flask"
+    BaseType "Callous Mask" "Carnal Sceptre" "Clasped Mitts" "Close Helmet" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Burgonet" "Ezomyte Tower Shield" "Full Wyrmscale" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Imperial Maul" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sapphire Flask" "Siege Axe" "Topaz Flask" "Varnished Coat" "Void Axe" "Wereclaw Talisman" "Stibnite Flask" "Stygian Vise" "Demon Dagger"
     SetTextColor 175 96 37 # UNQ
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
@@ -218,7 +217,7 @@ Show
 Show
     Rarity = Unique
     Class "Maps"
-    BaseType "Chateau Map" "Museum Map" "Courtyard Map"
+    BaseType "Chateau Map" "Museum Map" "Courtyard Map" "Moon Temple Map"
     SetTextColor 175 96 37 # UNQ
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
@@ -263,6 +262,15 @@ Show
     PlayAlertSound 6 300
 
 Show
+    ItemLevel >= 84
+    BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    SetTextColor 75 54 69 # RAS
+    SetBackgroundColor 255 255 255 # WHT
+    SetBorderColor 255 255 255 # WHT
+    SetFontSize 45
+    PlayAlertSound 6 300
+
+Show
     LinkedSockets = 5
     Rarity <= Rare
     Class "Body Armours"
@@ -274,7 +282,7 @@ Show
 Show
     ItemLevel >= 84
     Rarity <= Rare
-    BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Titanium Spirit Shield"
+    BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Titanium Spirit Shield" "Sorcerer Gloves" "Jewelled Foil" "Gemini Claw" "Imperial Claw" "Corsair Sword" "Siege Axe"
     SetTextColor 127 127 127 # 6ST
     SetBackgroundColor 42 42 52 # 6ST
     SetBorderColor 42 42 52 # 6ST
@@ -341,7 +349,7 @@ Show
 Show
     ItemLevel >= 72
     Rarity = Rare
-    Class "Rings" "Amulets"
+    Class "Rings" "Amulets" "Belts"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR
@@ -387,20 +395,30 @@ Show
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
 
-# Section: RARES - ELE WEAPONS
+# Section: RARES - ATTACK WEAPONS
 
 Show
-    ItemLevel >= 77
+    ItemLevel >= 73
     Rarity = Rare
     Class "Claws"
-    BaseType "Imperial Claw" "Gemini Claw"
+    BaseType "Imperial Claw" "Gemini Claw" "Terror Claw"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
 
 Show
-    ItemLevel >= 77
+    ItemLevel >= 73
+    Rarity = Rare
+    Class "Daggers"
+    BaseType "Ambusher"
+    SetTextColor 240 209 142 # RAR
+    SetBackgroundColor 67 35 46 # RAR
+    SetBorderColor 67 35 46 # RAR
+    SetFontSize 45
+
+Show
+    ItemLevel >= 73
     Rarity = Rare
     Class "Thrusting One Hand Swords"
     BaseType "Jewelled Foil" "Spiraled Foil"
@@ -409,45 +427,73 @@ Show
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
 
-# Section: RARES - PHY WEAPONS
-
 Show
-    ItemLevel >= 83
+    ItemLevel >= 73
     Rarity = Rare
-    Class "Claws"
-    BaseType "Terror Claw"
+    Class "One Hand Swords"
+    BaseType "Corsair Sword"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
 
 Show
-    ItemLevel >= 83
+    ItemLevel >= 73
     Rarity = Rare
-    Class "One Hand Swords" "One Hand Axes"
-    BaseType "Corsair Sword" "Siege Axe"
+    Class "One Hand Axes"
+    BaseType "Siege Axe"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
-
-Hide
-    ItemLevel >= 83
-    Rarity = Rare
-    Class "Two Hand" "Bows"
-    BaseType "Harbinger Bow" "Exquisite Blade" "Vaal Axe" "Fleshripper" "Coronal Maul"
-    SetTextColor 240 209 142 # RAR
-    SetBackgroundColor 67 35 46 # RAR
-    SetBorderColor 67 35 46 # RAR
-    SetFontSize 45
-
-# Section: RARES - CASTER WEAPONS
 
 Show
-    ItemLevel >= 77
+    ItemLevel >= 73
+    Rarity = Rare
+    Class "Bows"
+    BaseType "Harbinger Bow"
+    SetTextColor 240 209 142 # RAR
+    SetBackgroundColor 67 35 46 # RAR
+    SetBorderColor 67 35 46 # RAR
+    SetFontSize 45
+
+Show
+    ItemLevel >= 73
+    Rarity = Rare
+    Class "Two Hand Axes"
+    BaseType "Vaal Axe" "Fleshripper"
+    SetTextColor 240 209 142 # RAR
+    SetBackgroundColor 67 35 46 # RAR
+    SetBorderColor 67 35 46 # RAR
+    SetFontSize 45
+
+Show
+    ItemLevel >= 73
+    Rarity = Rare
+    Class "Two Hand Swords"
+    BaseType "Exquisite Blade"
+    SetTextColor 240 209 142 # RAR
+    SetBackgroundColor 67 35 46 # RAR
+    SetBorderColor 67 35 46 # RAR
+    SetFontSize 45
+
+Show
+    ItemLevel >= 73
+    Rarity = Rare
+    Class "Two Hand Maces"
+    BaseType "Coronal Maul"
+    SetTextColor 240 209 142 # RAR
+    SetBackgroundColor 67 35 46 # RAR
+    SetBorderColor 67 35 46 # RAR
+    SetFontSize 45
+
+# Section: RARES - SPELL WEAPONS
+
+Show
+    ItemLevel >= 64
     Rarity = Rare
     Class "Daggers"
-    BaseType "Imperial Skean" "Royal Skean" "Skean" "Stiletto" "Poignard" "Ambusher"
+    BaseType "Imperial Skean" "Platinum Kris"
     SetTextColor 240 209 142 # RAR
     SetBackgroundColor 67 35 46 # RAR
     SetBorderColor 67 35 46 # RAR
@@ -463,17 +509,27 @@ Show
     SetBorderColor 67 35 46 # RAR
     SetFontSize 45
 
-# Section: RARE - JEWELS
+# Section: RARES - JEWELS
 
 Show
-    ItemLevel >= 84
+    ItemLevel >= 83
     Rarity >= Normal
     Class "Abyss Jewel"
     SetTextColor 112 194 124 # AJ0
     SetBackgroundColor 255 255 255
     SetBorderColor 255 255 255 # WHT
     SetFontSize 45
-    PlayAlertSound 6 300
+    PlayAlertSound 10 300
+
+Show
+    ItemLevel >= 83
+    Rarity = Rare
+    Class "Abyss Jewel"
+    SetTextColor 112 194 124 # AJ0
+    SetBackgroundColor 210 255 189 # AJ0
+    SetBorderColor 210 255 189 # AJ0
+    SetFontSize 45
+    PlayAlertSound 2 300
 
 Show
     Rarity = Rare
@@ -662,7 +718,7 @@ Show
 
 Show
     Class "Divination Card"
-    BaseType "Bowyer's Dream" "Chaotic Disposition" "Heterochromia" "Last Hope" "The Saint's Treasure" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Sephirot" "The Soul" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Void" "The Artist"
+    BaseType "Bowyer's Dream" "Chaotic Disposition" "Heterochromia" "Last Hope" "The Saint's Treasure" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Sephirot" "The Soul" "The Standoff" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Void" "The Artist" "The Throne"
     SetTextColor 24 76 135 # DVS
     SetBackgroundColor 160 230 230 # DV0
     SetBorderColor 160 230 230 # DV0
@@ -680,7 +736,7 @@ Show
 
 Hide
     Class "Divination Card"
-    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter" "The Lich" "A Mother's Parting Gift" "The Flora's Gift" "The Web" "The Incantation" "The Scarred Meadow"
+    BaseType "The Carrion Crow" "Cartographer's Delight" "The Metalsmith's Gift" "Struck by Lightning" "Thunderous Skies" "Prosperity" "Dying Anguish" "The Hermit" "The King's Blade" "The Rabid Rhoa" "The Surgeon" "Dying Anguish" "Turn the Other Cheek" "The Lunaris Priestess" "Destined to Crumble" "Rain Tempter" "The Lich" "A Mother's Parting Gift" "The Flora's Gift" "The Web" "The Incantation" "The Scarred Meadow" "Tranquillity" "The Watcher" "The Siren" "The Lord in Black"
 
 Show
     Class "Divination Card"

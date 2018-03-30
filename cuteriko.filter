@@ -1,7 +1,8 @@
-﻿# cuteriko - a path of exile semi-strict
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# cuteriko - a path of exile semi-strict
 # filter for temp. hardcore league players
 # 
-# version: 3.0.0
+# version: 3.0.1
 # author: 8037
 # contact: 8037@airmail.cc
 # forum thread: SOON
@@ -11,14 +12,11 @@
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
 
-
-# Section: CURRENCY
-# CURRENCY
 # CURRENCY
 
 Show
     Class "Currency"
-    BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Albino Rhoa Feather" "Orb of Annulment"
+    BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Albino Rhoa Feather" "Orb of Annulment" "Mirror Shard"
     SetTextColor 219 72 72 # $$$
     SetBackgroundColor 255 255 255 # WHT
     SetBorderColor 255 255 255 # WHT
@@ -674,20 +672,10 @@ Show
 Show
     Rarity = Rare
     Class "Jewel"
-    SetTextColor 255 176 205
-    SetBackgroundColor 199 99 135
-    SetBorderColor 199 99 135
+    SetTextColor 255 255 191 # JWR
+    SetBackgroundColor 247 214 90 # JWR
+    SetBorderColor 247 214 90 # JWR
     SetFontSize 45
-
-#Disabled Block Start
-#Show
-#    Rarity = Rare
-#    Class "Jewel"
-#    SetTextColor 255 255 119 # JWR
-#    SetBackgroundColor 237 186 0 # JWR
-#    SetBorderColor 237 186 0 # JWR
-#    SetFontSize 45
-#Disabled Block End
 
 #Disabled Block Start
 #Hide
@@ -937,6 +925,14 @@ Show
 #    SetTextColor 248 216 155
 #    SetBackgroundColor 163 143 90
 #    SetBorderColor 163 143 90
+#    SetFontSize 45
+#Disabled Block End
+
+#Disabled Block Start
+#Show
+#    SetTextColor 255 228 238
+#    SetBackgroundColor 255 176 205
+#    SetBorderColor 255 176 205
 #    SetFontSize 45
 #Disabled Block End
 

@@ -2,7 +2,7 @@
 # a path of exile semi-strict
 # filter for temp. hardcore league players
 #
-# version: 		2.0.0
+# version: 		3.0.0
 # author: 		8037
 # contact: 		8037@airmail.cc
 # forum thread: SOON
@@ -11,6 +11,16 @@
 #
 # if you see something like this: https://tknk.io/A3T4
 # it's a bug, report to me immediately
+
+version 3.0.0   ---
+- renamed base filter to "cuteriko"
+- removed cuteriko_strict filter support ("nothing is so exhausting as indecision, and nothing is so futile." - b. russell)
+- added support for bestiary league (thaumaturgical net and necromancy net)
+- reintroduced harbinger orbs (welcome back harbinger!)
+- raised ilevel of all rares (less clutter on low level maps)
+- retiered various divination cards
+- added new colorscheme for lower currency and lower harbinger shards
+- added new section for desirable elder/shaper bases (***WIP***)
 
 version 2.0.0 	---
 - renamed base filter to "cuteriko_vanilla"
